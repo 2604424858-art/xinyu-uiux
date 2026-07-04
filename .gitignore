@@ -1,0 +1,6 @@
+node_modules/
+dist/
+tmp/
+tmp_pdf_pages/
+*.log
+.DS_Store
