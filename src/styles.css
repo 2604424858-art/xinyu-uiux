@@ -1652,6 +1652,31 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .strength-grid {
+    gap: 12px;
+  }
+
+  .strength-card {
+    min-height: 0;
+    padding: 18px;
+  }
+
+  .strength-card svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .strength-card h3 {
+    margin: 14px 0 8px;
+    font-size: 20px;
+    line-height: 1.24;
+  }
+
+  .strength-card p {
+    font-size: 15px;
+    line-height: 1.58;
+  }
+
   .about-copy {
     padding: 24px;
   }
@@ -1667,6 +1692,7 @@ main {
 
   .project-card {
     min-height: 0;
+    padding: 12px;
   }
 
   .project-grid {
@@ -1678,7 +1704,8 @@ main {
   .project-card img {
     height: auto;
     aspect-ratio: 16 / 9;
-    padding: 0;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.82);
     object-fit: cover;
   }
 
