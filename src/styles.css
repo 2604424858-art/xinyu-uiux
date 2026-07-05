@@ -1723,6 +1723,11 @@ main {
     padding: 18px 14px;
   }
 
+  .contact-panel::before,
+  .contact-panel::after {
+    content: none;
+  }
+
   .contact-cards {
     grid-template-columns: 1fr;
   }
