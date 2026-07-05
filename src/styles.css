@@ -1653,7 +1653,6 @@ main {
   }
 
   .strength-grid {
-    width: min(100% - 48px, var(--safe-max));
     gap: 12px;
   }
 
@@ -1715,11 +1714,11 @@ main {
   }
 
   .contact-end {
-    padding: 48px 18px 42px;
+    padding: 48px 0 42px;
   }
 
   .contact-panel {
-    padding: 24px;
+    padding: 18px 14px;
   }
 
   .contact-cards {
@@ -1727,12 +1726,35 @@ main {
   }
 
   .contact-card {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 34px minmax(0, 1fr) auto;
+    gap: 10px;
+    min-height: 82px;
+    padding: 12px;
+  }
+
+  .contact-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .contact-card small {
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+
+  .contact-card a {
+    font-size: 15px;
+    white-space: nowrap;
   }
 
   .contact-card button {
-    grid-column: 2;
-    justify-self: start;
+    grid-column: auto;
+    justify-self: end;
+    min-height: 34px;
+    gap: 4px;
+    padding: 8px 10px;
+    font-size: 12px;
+    white-space: nowrap;
   }
 
   .case-modal {
