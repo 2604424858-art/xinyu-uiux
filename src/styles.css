@@ -1544,12 +1544,52 @@ main {
     top: 14px;
     width: calc(100% - var(--safe-x));
     grid-template-columns: auto 1fr auto;
+    gap: 8px;
+    min-height: auto;
+    padding: 10px 12px;
+  }
+
+  .brand {
+    min-width: 0;
+    font-size: 14px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .brand span {
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .site-nav nav {
     grid-column: auto;
     justify-content: flex-end;
-    overflow-x: auto;
+    gap: 4px;
+    overflow: visible;
+  }
+
+  .site-nav nav a,
+  .nav-contact {
+    min-height: 34px;
+    gap: 4px;
+    padding: 8px 6px;
+    font-size: 12px;
+    line-height: 1;
+    white-space: nowrap;
+    word-break: keep-all;
+    flex-shrink: 0;
+  }
+
+  .site-nav nav a span,
+  .nav-contact span {
+    white-space: nowrap;
+    word-break: keep-all;
+  }
+
+  .site-nav nav svg,
+  .nav-contact svg {
+    width: 14px;
+    height: 14px;
   }
 
   .hero {
