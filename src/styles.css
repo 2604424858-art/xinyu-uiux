@@ -1652,6 +1652,9 @@ main {
   }
 
   .strength-grid {
+    width: calc(100% - 28px);
+    margin-left: auto;
+    margin-right: auto;
     gap: 12px;
   }
 
