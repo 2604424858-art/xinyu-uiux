@@ -1528,6 +1528,85 @@ main {
   }
 }
 
+@media (min-width: 721px) and (max-width: 1100px) {
+  :root {
+    --safe-x: 64px;
+  }
+
+  .site-nav,
+  .hero-content,
+  .hero-intro,
+  .profile-device,
+  .hero-metrics,
+  .section-pad,
+  .projects,
+  .projects-heading,
+  .project-grid,
+  .section-title,
+  .contact-title,
+  .contact-panel {
+    width: min(var(--safe-max), calc(100% - var(--safe-x)));
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero {
+    padding: 120px 0 58px;
+  }
+
+  .hero-profile {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .hero-intro {
+    max-width: 760px;
+    justify-self: start;
+  }
+
+  .hero-copy {
+    width: min(760px, 100%);
+  }
+
+  .hero-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 36px;
+  }
+
+  .profile-device {
+    width: min(560px, calc(100% - var(--safe-x)));
+    justify-self: center;
+    margin-top: 8px;
+  }
+
+  .project-card img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+    object-fit: cover;
+  }
+
+  .strength-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .strength-card {
+    min-height: 220px;
+  }
+
+  .contact-card {
+    grid-template-columns: 42px minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+
+  .contact-card a,
+  .contact-card button {
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 720px) {
   :root {
     --safe-x: 34px;
