@@ -1653,12 +1653,13 @@ main {
   }
 
   .strength-grid {
+    width: min(100% - 48px, var(--safe-max));
     gap: 12px;
   }
 
   .strength-card {
-    min-height: 0;
-    padding: 18px;
+    min-height: 220px;
+    padding: 24px 22px;
   }
 
   .strength-card svg {
@@ -1667,7 +1668,7 @@ main {
   }
 
   .strength-card h3 {
-    margin: 14px 0 8px;
+    margin: 18px 0 10px;
     font-size: 20px;
     line-height: 1.24;
   }
